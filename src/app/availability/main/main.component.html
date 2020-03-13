@@ -1,1 +1,17 @@
-<p>main works!</p>
+<mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 0 : 0"
+[ngClass]="{'minisidebar': minisidebar}">
+
+<mat-sidenav-content class="page-wrapper" [ngClass]="status ? 'minitoggle' : ''">
+
+  <div class="page-content">
+    <mat-card>
+      <mat-card-content>Simple card just use
+          <code>&lt;mat-card&gt; &lt;mat-card-content&gt; ... &lt;/mat-card-content&gt; &lt;/mat-card&gt;</code>
+          <code><a href="https://material.angular.io/components/card/overview" target="_blank">Official Doc</a></code>
+      </mat-card-content>
+  </mat-card>
+ 
+  </div>
+
+</mat-sidenav-content>
+</mat-sidenav-container>
