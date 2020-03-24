@@ -7,6 +7,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HTTP_INTERCEPTORS} from '@angular/common/http';
 import {EosClientInterceptor} from './shared/service/eos-client.interceptor';
 import {AvailabilityModule} from './availability/availability.module';
+import {StoreModule} from '@ngrx/store';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import {AvailabilityModule} from './availability/availability.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
-    AvailabilityModule
+    AvailabilityModule,
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,

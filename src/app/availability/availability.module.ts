@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MainComponent } from './main/main.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {PerfectScrollbarModule} from 'ngx-perfect-scrollbar';
-
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -12,6 +12,7 @@ import {PerfectScrollbarModule} from 'ngx-perfect-scrollbar';
     CommonModule,
     MatSidenavModule,
     PerfectScrollbarModule,
+    MatCardModule,
 
   ]
 })
